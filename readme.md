@@ -1,5 +1,15 @@
+# 湖南省土壤重金属污染与健康风险的不确定性评估：蒙特卡洛模拟的地理探测器
 
-[Uncertainty Evaluation of Soil Heavy Metal(loid) Pollution and Health Risk: A Geographic Detector with Monte Carlo Simulation](https://www.mdpi.com/2305-6304/11/12/1006 "论文")
+土壤重金属污染与健康风险评估的研究广泛，但在系统考察这一过程中的不确定性方面存在显著差距。我们采用 Nemerow 指数、健康风险评估模型和地理探测器模型 （GDM） 来分析土壤重金属 （LOID） 污染，评估健康风险，并确定驱动因素。此外，利用蒙特卡洛模拟 （MCS） 方法定量评估与这些过程中驱动因素的采样点位置、模型参数和分类边界相关的不确定性。
+
+论文链接：[Uncertainty Evaluation of Soil Heavy Metal(loid) Pollution and Health Risk: A Geographic Detector with Monte Carlo Simulation](https://www.mdpi.com/2305-6304/11/12/1006 "论文")
+
+*** 
+
+# 目录
+- [环境](#环境)  
+- [数据](#数据)  
+- [鸣谢](#鸣谢)
 
 # 环境
 python==3.7  
@@ -7,19 +17,12 @@ pymc== 2.3.8
 numpy==1.21.6  
 gdal==2.2.4  
 
-# 软件
-arcmap
+***GDM代码：batch_derectorNemerow.R***
 
 # 数据
-Raw shp 包含原始土壤采样点和湖南省边界数据  
-influence factors 包含16个影响因子栅格数据  
-Monte Carlo output 包含使用MC模拟的采样点数据shp、属性数据Trace_npy、影响因子栅格数据Raster5000、健康风险指数涉及的变量HQ_CR  
-Nemerow1000 包含由模拟的采样点和属性计算的Nemerow指数，插值、重分类、计算信息熵的栅格数据  
-geodector 包含GDM的输入和输出数据。  
+由于与湖南国土资源规划院签订了数据隐私协议，本研究中使用的数据集尚未公开。但是，如果提出合理要求，可以从通讯作者处获得。 
 
-# 程序入口
-python main.py  
-GDM代码：batch_derectorNemerow.R
-
+# 鸣谢
+本研究得到了湖南省自然科学基金（批准号 2022JJ30708 和 2023JJ60188）、湖南省自然资源科学和技术规划计划（批准号 20230123XX）、长沙市自然科学基金（批准号 KQ2208054）和国家自然科学基金（批准号 42072326）的资助。
 
 
